@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<browserconfig>
+   <msapplication>
+     <tile>
+        <square70x70logo src="../imperia/IE-70.png"/>
+        <square150x150logo src="../imperia/IE-150.png"/>
+        <wide310x150logo src="../imperia/IE-310x150.png"/>
+        <square310x310logo src="../imperia/IE-310.png"/>
+        <TileColor>#ffffff</TileColor>
+     </tile>
+   </msapplication>
+</browserconfig>

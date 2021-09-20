@@ -1,0 +1,67 @@
+/* --------------- GENERAL & BODY --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 2400px;
+  }
+  html,
+  body {
+    font-family: "raleway", sans-serif;
+    font-size: 1rem;
+    margin-left: 2vw;
+  }
+  #body {
+    width: 95%;
+    margin: auto;
+  }
+
+
+/* --------------- FLEX NAV --------------- */
+.flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.decorationNone {
+    text-decoration: none;
+}
+
+
+.spaceLinks {
+    width: 45%;
+}
+.barreLink {
+    width: 140px;
+    height: 99px;
+}
+.colorLink13 {
+    color: #0065fc;
+}
+.colorLink2 {
+    color: black;
+}
+.bordernav {
+    border-top: 2px solid #0065fc; 
+}
+.sizeNav {
+    height: 100px;
+}
+
+  /* --------------- HEADER --------------- */
+  #logo img {
+    width: 11vh;
+  }
+
+
+ 
