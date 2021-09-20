@@ -2,20 +2,14 @@
 * {
     margin: 0;
     padding: 0;
-    max-width: 2400px;
   }
-  html,
   body {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    margin-left: 2vw;
+    margin-left:40px;    
+    margin-right: 40px;
   }
-  #body {
-    width: 95%;
-    margin: auto;
-  }
-
-
+  
 /* --------------- FLEX NAV --------------- */
 .flexCentre {
     display: flex;
