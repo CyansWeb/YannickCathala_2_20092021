@@ -269,38 +269,46 @@ header .fa-map-marker-alt {
 
 /* --------------- FILTRES --------------- */
 
-#filtres {
+#filter-title {
     font-weight: bold;
+}
+
+.filter-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
     font-size: 1.1em;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
-#titre {
-    margin-right: 20px;
-}
-
-#blockFiltres {
-    display: flex;
-    flex-wrap: wrap;
-    height: 50px;
-}
-
-.boiteFiltres {
+.filter-box .fas {
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+    margin: -2px;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
-    margin-left: 25px;
-    height: 45px;
-    border-top: 2px solid #d9d9d9;
-    border-right: 2px solid #d9d9d9;
-    border-bottom: 2px solid #d9d9d9;
+    justify-content: center;
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
     border-radius: 30px;
     cursor: pointer;
     background-color: white;
 }
 
-.boiteFiltres:hover {
+.filter-text {
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.filter-box:hover {
     background-color: #deebff;
     color: #0065fc;
     border-color: #deebff;
@@ -308,21 +316,8 @@ header .fa-map-marker-alt {
     transition: 0.2s;
 }
 
-.texteFiltres {
-    padding-left: 15px;
-    padding-right: 20px;
-}
 
-#filtres i {
-    display: flex;
-    justify-content: center;
-    height: 20px;
-    width: 20px;
-    background-color: #deebff;
-    padding: 0.8rem;
-    border-radius: 30px;
-    color: #0065fc;
-}
+/* --------------- FILTRES 2 --------------- */
 
 
 /* --------------- LIGNE INFO --------------- */
