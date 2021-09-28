@@ -305,7 +305,7 @@ header .fa-map-marker-alt {
 .filter-text {
     font-weight: bold;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
 }
 
 .filter-box:hover {
@@ -315,9 +315,6 @@ header .fa-map-marker-alt {
     cursor: pointer;
     transition: 0.2s;
 }
-
-
-/* --------------- FILTRES 2 --------------- */
 
 
 /* --------------- LIGNE INFO --------------- */
