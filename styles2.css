@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+/*------------------------------------- General  -------------------------------------*/
+
+:root {
+    --blue: #0065fc;
+    --lightblue: #deebff;
+    --lighterblue: #f3f8ff;
+    --grey: #d9d9d9;
+    --lightgrey: #f2f2f2;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*----------------- Logo & Navbarbar -----------------*/
+
+#logo {
+    margin-right: auto;
+    padding: 0 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 2rem;
+    border-top: 3px solid transparent;
+}
+
+nav a:hover {
+    border-top-color: var(--blue);
+}
+
+.subnav {
+    display: flex;
+}
+
+.subnav a:hover {
+    color: var(--blue);
+}
+
+@media (max-width: 800px) {
+    .subnav {
+        order: 1;
+        flex-basis: 100%;
+    }
+    .subnav a {
+        flex-basis: 50%;
+        text-align: center;
+        border-bottom: 3px solid var(--lightgrey);
+    }
+    .subnav a:hover {
+        border-bottom-color: var(--blue);
+        border-top-color: transparent;
+    }
+}
+
+#inscription {
+    font-weight: bold;
+    color: var(--blue)
+}
