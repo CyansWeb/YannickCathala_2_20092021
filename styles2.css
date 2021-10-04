@@ -12,6 +12,7 @@
 
 body {
     font-family: "Raleway", sans-serif;
+    margin: auto;
 }
 
 * {
@@ -21,6 +22,17 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    padding: 0 2rem;
 }
 
 
@@ -74,4 +86,60 @@ nav a:hover {
 #inscription {
     font-weight: bold;
     color: var(--blue)
+}
+
+
+/*----------------- Search Box -----------------*/
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+
+/* -- icone map -- */
+
+.search-form i {
+    padding: 1rem 1rem;
+    height: 40px;
+    background-color: var(--lightgrey);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.search-form input {
+    padding-left: 10px;
+    height: 40px;
+    border: none;
+    border-top: 1px solid #f0eeeef2;
+    border-bottom: 1px solid #f0eeeef2;
+}
+
+.search-form input::placeholder {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.search-form input:focus {
+    outline-style: none;
+}
+
+.search-form button {
+    background-color: var(--blue);
+    height: 40px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 2rem 0 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 1rem 1rem 0;
+    transition: 0.2s;
+}
+
+.search-form button:hover {
+    background-color: #deebff;
+    color: #0065fc;
+    transition: 0.2s;
 }
