@@ -301,7 +301,6 @@ nav a:hover {
 }
 
 .city-appartments-list div {
-    flex-basis: calc(33%-1rem);
     background-color: #ffffff;
 }
 
@@ -316,7 +315,6 @@ nav a:hover {
 }
 
 .appartments-list .popular-flex div {
-    border: 1px solid green;
     background-color: #ffffff;
 }
 
@@ -330,19 +328,24 @@ nav a:hover {
 /* --------------- APPARTMENT CARD --------------- */
 
 .appartment-card {
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
 }
 
 .appartment-card img {
-    border-radius: 1rem 1rem 0 0;
     width: 236px;
     height: 114px;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
 .text-card {
+    line-height: 1rem;
+}
+
+.appartment card p {
+    margin: 0;
     line-height: 1rem;
 }
 
@@ -355,4 +358,30 @@ nav a:hover {
 
 .grey {
     color: var(--grey)
+}
+
+
+/* --------------- POPULAR APPARTMENT CARD --------------- */
+
+.popular-appartment-card {
+    display: flex;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2px 10px 2px 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #b4b3b3;
+}
+
+.popular-appartment-card:hover {
+    transition: transform 200ms;
+    transform: scale(1.03);
+}
+
+.popular-appartment-card img {
+    width: 127px;
+    height: 134px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
 }
