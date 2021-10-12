@@ -22,7 +22,7 @@
 
 
     <!--  CSS  -->
-    <link href="styles2.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 
 
 </head>
@@ -33,11 +33,10 @@
     <header>
         <!--  NAVBAR  -->
         <nav>
-            <img id="logo" src="src/logo/Reservia.svg" alt="logo de Reservia">
-            </div>
+            <a id="logo" href=""><img src="src/logo/Reservia.svg" alt="logo de Reservia"></a>
             <div class="subnav">
                 <a href="#section_hebergement">Hébergements</a>
-                <a href="#section_activites">Activités</a>
+                <a href="#section_activitiess">Activités</a>
             </div>
             <a id="inscription" href="#">S'inscrire</a>
         </nav>
@@ -94,14 +93,14 @@
 
         <!--******************************************* CONTENT *********************************************-->
 
-        <!-- Appartments list -->
+        <!-- appartments list -->
         <section class="appartments-list">
 
             <div class="city">
-                <h3>Hébergements à Marseille</h3>
+                <div class="title">Hébergements à Marseille</div>
                 <div class="city-appartments-list">
-                    <div class="appartment-card">
-                        <img src="src/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width="750" height="500" alt="auberge de la cannebiere">
+                    <div class="appartments-card">
+                        <img src="src/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge de la cannebiere">
                         <div class="text-card">
                             <strong>Auberge de la Cannebière</strong>
                             <p>Nuit à partir de <strong>25€</strong></p>
@@ -114,7 +113,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="appartment-card">
+                    <div class="appartments-card">
                         <img src="src/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width="750" height="500" alt="Hôtel du Port">
                         <div class="text-card">
                             <strong>Hôtel du Port</strong>
@@ -128,7 +127,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="appartment-card">
+                    <div class="appartments-card">
                         <img src="src/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" width="750" height="500" alt="Hôtel Les Mouettes">
                         <div class="text-card">
                             <strong>Hôtel Les Mouettes</strong>
@@ -142,7 +141,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="appartment-card">
+                    <div class="appartments-card">
                         <img src="src/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" width="750" height="500" alt="Hôtel de la mer">
                         <div class="text-card">
                             <strong>Hôtel de la mer</strong>
@@ -156,7 +155,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="appartment-card">
+                    <div class="appartments-card">
                         <img src="src/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" width="750" height="500" alt="Auberge de Le Panier">
                         <div class="text-card">
                             <strong>Auberge de Le Panier</strong>
@@ -170,7 +169,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="appartment-card">
+                    <div class="appartments-card">
                         <img src="src/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" width="750" height="500" alt="Hôtel chez Amina">
                         <div class="text-card">
                             <strong>Hôtel chez Amina</strong>
@@ -186,16 +185,19 @@
                     </div>
 
                 </div>
-                <a class="lien_affiche" id="titre_affiche" href="">Afficher plus</a>
+                <div class="titre_affiche"><a class="lien_affiche" href="">Afficher plus</a></div>
             </div>
 
 
             <!-- Les plus populaires -->
 
             <div class="popular">
-                <h3>Les plus populaires</h3>
+                <div class="title">
+                    Les plus populaires
+                    <i class="fas fa-chart-line"></i>
+                </div>
                 <div class="popular-flex">
-                    <div class="popular-appartment-card">
+                    <div class="popular-card">
                         <img src="src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="auberge de la cannebiere">
                         <div class="text-card">
                             <strong>Hôtel Le soleil du matin</strong>
@@ -211,7 +213,7 @@
                     </div>
                 </div>
                 <div class="popular-flex">
-                    <div class="popular-appartment-card">
+                    <div class="popular-card">
                         <img src="src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="auberge de la cannebiere">
                         <div class="text-card">
                             <strong>Au coeur de l'eau Chambres d'hôtes</strong>
@@ -227,7 +229,7 @@
                     </div>
                 </div>
                 <div class="popular-flex">
-                    <div class="popular-appartment-card">
+                    <div class="popular-card">
                         <img src="src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="auberge de la cannebiere">
                         <div class="text-card">
                             <strong>Hôtel Tout Bleu et Blanc</strong>
@@ -243,10 +245,6 @@
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
-
-
         </section>
 
 
@@ -255,17 +253,114 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+        <!--******************************************* ACTIVITIES *********************************************-->
+        <section id="activities">
+            <div id="teteactivities">
+                <div class="title-activities">Activités à Marseille</div>
+            </div>
+            <div id="photoactivities">
+                <article id="article1">
+                    <div class="grandeImg">
+                        <!-- section block 1 encart -->
+                        <!--************************** encart vieuxPort **************************-->
+                        <a href="#" class="encartactivities">
+                            <figure class="block1">
+                                <img src="src/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                                <figcaption>
+                                    <h3>Vieux Port</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="petiteImg">
+                        <!-- section block 2 encart 60/40 -->
+                        <!--*************************** encart pomegues ***************************-->
+                        <a href="#" class="encartactivities" id="aPomegues">
+                            <figure id="pomegues">
+                                <img src="src/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                                <figcaption>
+                                    <h3>Fort de Pomègues</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <!--************************** encart frioul *****************************-->
+                        <a href="#" class="encartactivities" id="aFrioul">
+                            <figure id="frioul">
+                                <img src="src/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                                <figcaption>
+                                    <h3>Îles du Frioul</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </article>
+                <article id="article2">
+                    <div class="grandeImg">
+                        <!-- section block 1 image -->
+                        <!--************************** encart calanques ***************************-->
+                        <a href="#" class="encartactivities">
+                            <figure class="block1">
+                                <img src="src/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                                <figcaption>
+                                    <h3>Parc National des Calanques</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="petiteImg">
+                        <!-- section block 2 encart 50/50 -->
+                        <!--************************** encart laGarde *****************************-->
+                        <a href="#" class="encartactivities" id="garde">
+                            <figure class="block2">
+                                <img src="src/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                                <figcaption>
+                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <!--************************** encart longchamp ****************************-->
+                        <a href="#" class="encartactivities" id="lonchamp">
+                            <figure class="block2">
+                                <img src="src/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Lonchamps">
+                                <figcaption>
+                                    <h3>Parc Longchamp</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+    </div>
+    <!--*************************** pied de page *******************************-->
+    <footer>
+        <!--**************************** A propos **********************************-->
+        <section id="propos">
+            <h4>A propos</h4>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </section>
+        <!--****************************** hebergement *******************************-->
+        <section id="hebergement">
+            <h4>Nos hébergements</h4>
+            <ul>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+        </section>
+        <!--******************************** assistance ******************************-->
+        <section id="assistance">
+            <h4>Assistance</h4>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 
 </html>

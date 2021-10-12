@@ -64,6 +64,11 @@
     background-color: #ffffff;
 }
 
+.city-appartments-list div:hover {
+    transition: transform 200ms;
+    transform: scale(1.03);
+}
+
 
 /* --------------- appartments CARD --------------- */
 
@@ -188,6 +193,19 @@
     display: flex;
 }
 
+.big-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.big-block:hover {
+    transition: transform 200ms;
+    transform: scale(1.03);
+}
+
 .small-pics {
     display: flex;
     flex: 50%;
@@ -199,6 +217,11 @@
     height: 50%;
 }
 
+#aPomegues:hover {
+    transition: transform 200ms;
+    transform: scale(1.03);
+}
+
 #activities figure {
     width: 100%;
 }
@@ -206,6 +229,11 @@
 #aFrioul {
     height: 50%;
     align-items: flex-end;
+}
+
+#aFrioul:hover {
+    transition: transform 200ms;
+    transform: scale(1.03);
 }
 
 .big-pics img {
@@ -237,8 +265,15 @@
 }
 
 #garde,
-#lonchamp {
+#lonchamp,
+{
     height: 45%;
+}
+
+#garde:hover,
+#lonchamp:hover {
+    transition: transform 200ms;
+    transform: scale(1.03);
 }
 
 #garde img {
