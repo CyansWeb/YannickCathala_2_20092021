@@ -1,0 +1,424 @@
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.appartments-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.appartments-list div {
+    background-color: var(--lightgrey);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.appartments-list .city {
+    flex-basis: 900px
+}
+
+.city-appartments-list a {
+    font-weight: bold;
+}
+
+.appartments-list .popular {
+    flex-basis: 380px;
+}
+
+@media (max-width: 1000px) {
+    .appartments-list {
+        flex-direction: column;
+    }
+    .popular {
+        order: -1;
+    }
+}
+
+.titre_affiche {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lien_affiche:hover {
+    color: #0065fc;
+    transition: 0.2s;
+}
+
+
+/* --------------- LIST appartments CITY --------------- */
+
+.city-appartments-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.city-appartments-list div {
+    background-color: #ffffff;
+}
+
+
+/* --------------- appartments CARD --------------- */
+
+.appartments-card {
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.appartments-card img {
+    width: 236px;
+    height: 114px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.text-card {
+    line-height: 1rem;
+}
+
+.appartments card p {
+    margin: 0;
+    line-height: 1rem;
+}
+
+
+/* STARS Color */
+
+.blue {
+    color: var(--blue);
+}
+
+.grey {
+    color: var(--grey)
+}
+
+
+/*------------------------------------- POPULAR  -------------------------------------*/
+
+.appartments-list .popular-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.appartments-list .popular-flex div {
+    background-color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+    .appartments-list .popular-flex {
+        flex-direction: row;
+    }
+}
+
+.popular-card {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #b4b3b3;
+    overflow: auto;
+}
+
+.popular-card:hover {
+    transition: transform 200ms;
+    transform: scale(1.03);
+}
+
+.popular-card img {
+    width: 127px;
+    height: 134px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.popular h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*------------------------------------- ACTIVITIES  -------------------------------------*/
+
+.title-activities {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#activities h3 {
+    font-size: 1rem;
+    margin: 0.4vw 0 1.4vw 0;
+}
+
+#photoactivities {
+    display: flex;
+    height: 29vw;
+}
+
+#article1 {
+    display: flex;
+    width: 50%;
+}
+
+#article2 {
+    display: flex;
+    width: 50%;
+    margin-left: 1.6vw;
+}
+
+.big-pics {
+    display: flex;
+    flex: 50%;
+    margin-right: 1.6vw;
+    justify-content: space-between;
+}
+
+.encartactivities {
+    display: flex;
+}
+
+.small-pics {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#aPomegues {
+    height: 50%;
+}
+
+#activities figure {
+    width: 100%;
+}
+
+#aFrioul {
+    height: 50%;
+    align-items: flex-end;
+}
+
+.big-pics img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+#pomegues img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#frioul {
+    height: 80%;
+}
+
+#frioul img {
+    height: 62%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.block2 img {
+    width: 100%;
+    height: 66.5%;
+    object-fit: cover;
+}
+
+#garde,
+#lonchamp {
+    height: 45%;
+}
+
+#garde img {
+    object-position: top;
+}
+
+#activities figcaption {
+    margin-left: 0.7vw;
+}
+
+#activities img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+#photoactivities figure {
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px #d1d1d1;
+}
+
+
+/*********************** footer ******************/
+
+footer {
+    display: flex;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding-left: 3.2vw;
+}
+
+#propos {
+    flex: 1 30%;
+}
+
+#hebergement {
+    flex: 1 30%;
+}
+
+#assistance {
+    flex: 1 30%;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    padding: 5px 0 5px 0;
+}
+
+footer a:hover {
+    color: #0065fc;
+}
+
+h4 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+
+/************************** Media queries ********************/
+
+@media screen and (max-width: 1400px) {
+    #article1,
+    #article2 {
+        flex-direction: column;
+        width: 49%;
+    }
+    .big-pics .encartactivities,
+    .big-block {
+        width: 100%;
+    }
+    .big-pics {
+        height: 49%;
+        margin: 0 0 2.4vw 0;
+    }
+    .small-pics {
+        flex-direction: row;
+        height: 49%;
+    }
+    #aPomegues,
+    #aFrioul,
+    #garde,
+    #lonchamp {
+        height: 100%;
+        width: 48%;
+    }
+    #frioul {
+        height: 100%;
+    }
+    #activities img {
+        height: 70%;
+    }
+    footer {
+        margin-top: 6vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #marseille {
+        margin: 2vw 0 0 0;
+    }
+    #photoactivities {
+        flex-direction: column;
+        height: 100vw;
+    }
+    #article1,
+    #article2 {
+        height: 50%;
+        width: 100%;
+    }
+    #article2 {
+        margin: 3.5vw 0 0 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /***************** marseille ************************/
+    #marseille {
+        background: none;
+        padding: 4vw;
+    }
+    /****************** activities ************************/
+    #activities {
+        padding: 4vw;
+    }
+    #garde {
+        margin: 0;
+    }
+    #activities figcaption {
+        margin-top: 1vh;
+        margin-left: 4vw;
+    }
+    /************************* footer ************************/
+    footer {
+        flex-direction: column;
+        padding-left: 5.7vh;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /**************************** marseille ********************************/
+    #photosMarseille {
+        flex-direction: column;
+    }
+    .encartMarseille {
+        margin-right: 0;
+    }
+    /***************************** activities *******************************/
+    #photoactivities {
+        flex-direction: column;
+        height: auto;
+    }
+    .small-pics {
+        flex-direction: column;
+    }
+    .small-pics,
+    .big-pics,
+    #garde,
+    #Pomegues {
+        margin: 0;
+    }
+    .big-block {
+        display: flex;
+        flex-direction: column;
+    }
+    #article1 {
+        flex-direction: column;
+    }
+    #article2 {
+        flex-direction: column;
+        margin: 0;
+    }
+    #activities img {
+        height: 140px;
+    }
+    #activities a {
+        width: 100%;
+        margin-bottom: 2.4vh;
+    }
+    #activities figure {
+        height: 180px;
+    }
+}
