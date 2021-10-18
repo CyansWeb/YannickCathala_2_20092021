@@ -1,29 +1,42 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "raleway", sans-serif;
+    font-size: 1rem;
+}
+
+#body {
+    max-width: 1200px;
     margin: auto;
-    max-width: 1280px;
+}
+
+#marseille a:hover,
+#populaire figure:hover,
+#activite a:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: black;
 }
 
 ul {
     list-style-type: none;
 }
 
-h1 {
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+h2 {
+    font-size: 1.3rem;
 }
 
-.wrapper {
-    padding: 0 2rem;
+.full {
+    color: #0065fc;
+}
+
+.full_grey {
+    color: #deebff;
 }
