@@ -575,7 +575,7 @@ h4 {
     #hotels {
         flex-direction: column-reverse;
     }
-    .fondPopulaire {
+    .fond_populaire {
         margin-bottom: 2.4vh;
     }
     #marseille {
@@ -617,28 +617,26 @@ h4 {
         border-top: 3px solid transparent;
     }
     nav a:hover {
-        border-top-color: var(--blue);
+        border-top-color: #0065fc;
     }
     .subnav {
         display: flex;
     }
     .subnav a:hover {
-        color: var(--blue);
+        color: #0065fc;
     }
-    @media (max-width: 800px) {
-        .subnav {
-            order: 1;
-            flex-basis: 100%;
-        }
-        .subnav a {
-            flex-basis: 50%;
-            text-align: center;
-            border-bottom: 3px solid #f2f2f2;
-        }
-        .subnav a:hover {
-            border-bottom-color: #0065fc;
-            border-top-color: transparent;
-        }
+    .subnav {
+        order: 1;
+        flex-basis: 100%;
+    }
+    .subnav a {
+        flex-basis: 50%;
+        text-align: center;
+        border-bottom: 3px solid #f2f2f2;
+    }
+    .subnav a:hover {
+        border-bottom-color: #0065fc;
+        border-top-color: transparent;
     }
     nav li:hover {
         border-bottom: 2px solid #0065fc;
