@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*-------------------------------- Footer ------------------------------------*/
+
+footer {
+    margin: 40px -20px 0 -20px;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.propos {
+    margin-left: 50px;
+    line-height: 2em;
+}
+
+.nos_hebergements,
+.assistance {
+    margin-left: 220px;
+    line-height: 2em;
+}
+
+footer a:hover {
+    color: #0065fc;
+}

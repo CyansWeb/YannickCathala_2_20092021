@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*--------------------------------------- Header ----------------------------------------*/
+
+
+/*----- Navigation -----*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: baseline;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.nav {
+    margin-right: 20px;
+    border: 2px solid transparent;
+    padding: 14px;
+}
+
+.inscription {
+    font-weight: bold;
+    color: #0065fc;
+    border: 2px solid transparent;
+    padding: 14px;
+}
+
+.header a:hover {
+    color: #0065fc;
+    border-top-color: #0065fc;
+}
+
+
+/*----- Le Formulaire -----*/
+
+
+/* ville */
+
+#formulaire {
+    margin-top: 2.2vh;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+#carte {
+    background-color: #f2f2f2;
+    width: 50px;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carte:hover {
+    cursor: pointer;
+    color: #0065fc;
+}
+
+#formulaire input[type="text"] {
+    font-size: 1.1rem;
+    width: 200px;
+    padding: 10px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+}
+
+#formulaire input[type="submit"] {
+    padding: 13px;
+    font-size: 20px;
+    background-color: #0065fc;
+    cursor: pointer;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    border: 1px solid #f2f2f2;
+    width: 160px;
+}
+
+#formulaire input[type="submit"]:hover {
+    background-color: #deebff;
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+}
+
+input {
+    font-family: inherit;
+}
+
+#loupe {
+    display: none;
+}
+
+
+/*----- Les Filtres -----*/
+
+#filters {
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#title {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+#filters-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters-box {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    margin-left: 25px;
+}
+
+.filters-box:hover {
+    background-color: #deebff;
+    color: #0065fc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filters-text {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#filters i {
+    display: flex;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    background-color: #deebff;
+    padding: 0.8rem;
+    border-radius: 30px;
+    color: #0065fc;
+}
+
+
+/*----- La Bulle info -----*/
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info i {
+    color: #0065fc;
+    margin-right: 15px;
+    border: 1px solid #f2f2f2;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+}

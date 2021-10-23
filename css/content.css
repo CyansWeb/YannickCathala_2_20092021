@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*---------------------------------- Section Hébergement -----------------------------------*/
+
+#section_hebergement {
+    margin-top: 30px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    width: 60%;
+    padding: 0 20px 10px 20px;
+}
+
+.hebergement {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hebergement img {
+    width: 220px;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.hebergement .titre_image,
+.hebergement .nuit,
+.hebergement .stars {
+    line-height: 1px;
+    margin-left: 10px;
+}
+
+.hebergement .titre_image {
+    margin-top: 10px;
+}
+
+.descriptif_hebergement {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2px 2px 10px 2px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #b4b3b3;
+}
+
+.descriptif_hebergement:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+/*---------------------------------- Aside Les plus populaires -----------------------------------*/
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre_pop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside {
+    margin-top: 30px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    width: 30%;
+    padding: 0 20px 10px 20px;
+}
+
+.populaire img {
+    width: 130px;
+    height: 130px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.photo_populaire {
+    display: flex;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2px 10px 2px 2px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #b4b3b3;
+}
+
+.photo_populaire:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.populaire .titre_image,
+.populaire .nuit,
+.populaire .stars {
+    margin-left: 20px;
+}
+
+.populaire .nuit {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+
+/*--------------------------- Activités -------------------------------*/
+
+.activites {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pomegues_frioul,
+.garde_longchamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activites img {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.grande_photo img {
+    width: 270px;
+    height: 400px;
+}
+
+.grand_cadre img {
+    width: 270px;
+    height: 160px;
+}
+
+.moyen_cadre img {
+    width: 270px;
+    height: 140px;
+}
+
+.petit_cadre img {
+    width: 270px;
+    height: 120px;
+}
+
+.grande_photo,
+.grand_cadre,
+.moyen_cadre,
+.petit_cadre {
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #d1d1d1;
+}
+
+.activites h4 {
+    margin-left: 15px;
+}
+
+.activites a div:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
