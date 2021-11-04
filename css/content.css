@@ -109,6 +109,13 @@ aside {
 
 /*--------------------------- Activités -------------------------------*/
 
+#section_activites {
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 0 20px 10px 20px;
+    border: 1px solid purple;
+}
+
 .activites {
     display: flex;
     justify-content: space-between;
