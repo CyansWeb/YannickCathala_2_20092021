@@ -32,7 +32,6 @@
 .inscription {
     font-weight: bold;
     color: #0065fc;
-    border: 2px solid transparent;
     padding: 14px;
 }
 
@@ -42,10 +41,7 @@
 }
 
 
-/*----- Le Formulaire -----*/
-
-
-/* ville */
+/*----- Formulaire -----*/
 
 #formulaire {
     margin-top: 2.2vh;
@@ -104,7 +100,7 @@ input {
 }
 
 
-/*----- Les Filtres -----*/
+/*----- Filtres -----*/
 
 #filters {
     font-weight: bold;
@@ -158,7 +154,7 @@ input {
 }
 
 
-/*----- La Bulle info -----*/
+/*----- Bulle info -----*/
 
 .info {
     display: flex;

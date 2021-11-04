@@ -6,13 +6,9 @@
 /*-------------------------------- Media Queries ------------------------------------*/
 
 
-/*----- Écran max 1199px -----*/
+/*----- LAPTOP jusque 1200px -----*/
 
-@media (max-width: 1199px) {
-    body {
-        width: 97%;
-        margin: auto;
-    }
+@media (max-width: 1200px) {
     #section_hebergement {
         width: 55%;
     }
@@ -24,41 +20,30 @@
         flex-wrap: wrap;
         justify-content: space-around;
         height: 450px;
-        /* augmentation de la hauteur pour éviter que les éléments soient collés verticalement */
         align-content: space-between;
-        /* puis les espacés un peu plus */
     }
     .pomegues_frioul,
     .garde_longchamp {
         flex-direction: row;
         width: 65%;
-        /* augmentation de la largeur pour éviter que les éléments soient collés horizontalement */
         justify-content: space-between;
     }
     .activites img {
         width: 30vw;
-        /* images Activités occuperont toujours 30% en largeur de la section */
         height: 150px;
     }
     footer {
         margin: 20px 0 0 0;
-        /* améliorer le footer (moins de débordement côté et plus espacé en haut) */
-    }
-    .nos_hebergements,
-    .assistance {
-        margin-left: auto;
-        /* "recenter" les 2 éléments */
-        margin-right: auto;
     }
 }
 
 
-/*----- Écran max 991px -----*/
+/*----- Écran jusque 990px -----*/
 
-@media (max-width: 991px) {
+@media (max-width: 990px) {
     .filtres {
         flex-direction: column;
-        /* aligner verticalement les filtres */
+        /* alignement vertical filtres */
         align-items: flex-start;
     }
     .les_filtres {
@@ -66,57 +51,51 @@
     }
     .icones {
         margin-bottom: 10px;
-        /* espacer verticalement les filtres */
     }
     main {
         flex-direction: column;
-        /* section Hébergement et Aside alignés verticalement */
     }
     #section_hebergement,
     aside {
+        /* Hébergement + Aside = 90% de l'écran */
         width: 90%;
-        /* section hébergement et Aside largeur de 90% de l'écran + marge auto pour les centrer + augmenterespace bas */
         margin: auto;
         margin-bottom: 15px;
     }
     .descriptif_hebergement img {
         width: 40vw;
-        /* images section hébergement occuperont toujours 40% en largeur de la section */
+        /* images hébergement = 40% de la section */
     }
     .photo_populaire h4 br {
         display: none;
-        /* supprimer le renvoi à la ligne */
+    }
+    footer {
+        flex-direction: column;
     }
 }
 
 
-/*----- Écran max 767px -----*/
+/*----- Tablette Pro max 767px (écran partagé) -----*/
 
 @media (max-width: 767px) {
     aside {
         order: 1;
-        /* aside vient avant section Hébergement */
+        /* Inversion order Aside / Hebergements */
     }
     #section_hebergement {
         order: 2;
-        /* Section Hébergement vient après aside */
     }
     .activites {
         flex-wrap: nowrap;
-        /* annuler renvoi à la ligne */
         flex-direction: column;
-        /* les aligner verticalement */
         height: auto;
-        /* hauteur auto pour qu'ils soient bien répartis verticalement (annuler le 450px précédent) */
         width: 97%;
         margin: auto;
     }
     .pomegues_frioul,
     .garde_longchamp {
         flex-direction: column;
-        /* les aligner verticalement */
         width: auto;
-        /* remettre la largeur de même taille que Activités (annuler celle à 65% des écrans plus grands */
     }
     .activites img {
         width: 100%;
@@ -129,72 +108,53 @@
     .moyen_cadre {
         margin-bottom: 15px;
     }
-    footer {
-        flex-direction: column;
-    }
-    .nos_hebergements,
-    .assistance {
-        margin-left: 50px;
-        /* même marge que Propos pour qu'ils soient tous alignés */
-    }
 }
 
 
-/*----- Écran max 575px -----*/
+/*----- Smartphone Pro max 575px -----*/
 
 @media (max-width: 575px) {
     .nav_menu {
         flex-direction: column-reverse;
-        /* inversion inscription avec hébergement et activités */
+        /* placement menu responsive */
         align-items: flex-end;
-        /* placés à droite */
         width: 100%;
     }
     .header {
         align-items: stretch;
-        /* remonter le logo en haut à gauche */
     }
     .logo {
         position: absolute;
-        /* pour pouvoir ensuite contrôler la largeur des 2 div children */
     }
     .header nav {
         width: 100%;
-        /* étendre la largeur de Hébergement et activité sur tout l'écran */
     }
     .header nav ul {
         padding-left: 0;
-        /* enlever le padding à gauche */
     }
     .nav_menu li {
         border-bottom: 2px solid #f2f2f2;
         padding-bottom: 17px;
-        /* bordure grise et alignement Hébergement et Activités */
         width: 50%;
         text-align: center;
     }
     .nav_menu li:hover {
         border-bottom-color: #0065fc;
-        /* bordure bleue basse lorsqu'on clique */
     }
     .nav:hover {
         border-top: none;
-        /* enlever bordure bleue haute lorsqu'on clique */
     }
     .hebergement img {
         width: 90vw;
-        /* image occupera toujours 90% de section hébergement */
+        /* image = 90% de hébergement */
         height: 140px;
     }
     #section_hebergement {
-        border: 1px solid white;
         background-color: white;
-        /* bordure et fond blanc */
     }
     .descriptif_hebergement {
         border: 1px solid #f2f2f2;
         box-shadow: 0 0 15px #f2f2f2;
-        /* shadow grise tout autour */
     }
     .populaire .titre_image {
         margin-top: 5px;
@@ -217,7 +177,7 @@
 }
 
 
-/*----- Écran max 375px -----*/
+/*----- Smartphone max 375px -----*/
 
 @media (max-width: 375px) {
     #form {

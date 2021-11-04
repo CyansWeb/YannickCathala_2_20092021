@@ -3,12 +3,12 @@
 /* CSS Document */
 
 
-/*------------------------------------- Architecture -------------------------------------*/
+/*------------------------------------- Reset -------------------------------------*/
 
 body {
     font-family: "Raleway", sans-serif;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 a {
