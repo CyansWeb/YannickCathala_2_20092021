@@ -7,6 +7,7 @@
 
 #section_hebergement {
     margin-top: 30px;
+    border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 60%;
@@ -83,6 +84,7 @@ aside {
 
 .photo_populaire {
     display: flex;
+    border: 1px solid white;
     background-color: white;
     border-radius: 15px;
     padding: 2px 10px 2px 2px;
@@ -108,13 +110,6 @@ aside {
 
 
 /*--------------------------- Activités -------------------------------*/
-
-#section_activites {
-    margin-top: 30px;
-    border-radius: 15px;
-    padding: 0 20px 10px 20px;
-    border: 1px solid purple;
-}
 
 .activites {
     display: flex;

@@ -9,6 +9,10 @@
 /*----- LAPTOP jusque 1200px -----*/
 
 @media (max-width: 1200px) {
+    body {
+        width: 97%;
+        margin: auto;
+    }
     #section_hebergement {
         width: 55%;
     }
@@ -150,6 +154,7 @@
         height: 140px;
     }
     #section_hebergement {
+        border: 1px solid white;
         background-color: white;
     }
     .descriptif_hebergement {
