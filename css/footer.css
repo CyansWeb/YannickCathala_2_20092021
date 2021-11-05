@@ -13,8 +13,8 @@ footer {
     display: flex;
     max-width: 1200px;
     padding-left: 50px;
-    border: 1px solid green;
     justify-content: center;
+    margin: auto;
 }
 
 #propos {
