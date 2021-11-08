@@ -17,12 +17,11 @@
     }
     aside {
         width: 35%;
-        height: 520px;
+        height: 100%;
     }
     .activites {
         flex-wrap: wrap;
         justify-content: space-around;
-        height: 450px;
         align-content: space-between;
     }
     .pomegues_frioul,
@@ -34,6 +33,10 @@
     .activites img {
         width: 30vw;
         height: 150px;
+    }
+    #afficher,
+    h5 {
+        margin-left: 10px;
     }
     footer {
         margin: 20px 0 0 0;
