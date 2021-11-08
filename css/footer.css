@@ -11,22 +11,15 @@ footer {
 
 #footer_container {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
-    padding-left: 50px;
+    padding-left: 5px;
     justify-content: center;
     margin: auto;
 }
 
-#propos {
-    flex: 1 30%;
-}
-
-#hebergement {
-    flex: 1 30%;
-}
-
-#assistance {
-    flex: 1 30%;
+.colonne_footer {
+    flex: 1 0 320px;
 }
 
 footer ul {

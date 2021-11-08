@@ -61,9 +61,10 @@
     #section_hebergement,
     aside {
         /* Hébergement + Aside = 90% de l'écran */
-        width: 90%;
+        width: 100%;
         margin: auto;
         margin-bottom: 15px;
+        padding: 0;
     }
     .descriptif_hebergement img {
         width: 40vw;
