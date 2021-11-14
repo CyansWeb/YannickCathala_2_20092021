@@ -24,15 +24,18 @@
         justify-content: space-around;
         align-content: space-between;
     }
-    .pomegues_frioul,
-    .garde_longchamp {
+    .conteneur_double_activites {
         flex-direction: row;
-        width: 65%;
-        justify-content: space-between;
     }
     .activites img {
         width: 30vw;
         height: 150px;
+    }
+    .grande_photo,
+    .grand_cadre,
+    .petit_cadre,
+    .moyen_cadre {
+        margin: 15px;
     }
     #afficher,
     h5 {
@@ -79,6 +82,9 @@
     footer {
         flex-direction: column;
     }
+    .activites img {
+        width: 250px;
+    }
 }
 
 
@@ -109,11 +115,18 @@
         /* images occupent 100% de la largeur d'activités */
         height: 150px;
     }
+    .conteneur_double_activites {
+        flex-wrap: wrap;
+    }
+    .conteneur_double_activites div {
+        width: 100%;
+    }
     .grande_photo,
-    .grand_cadre,
-    .petit_cadre,
-    .moyen_cadre {
-        margin-bottom: 15px;
+    .moyen_cadre,
+    .petit_cadre {
+        width: 100%;
+        min-width: 250px;
+        margin: 15px 0;
     }
 }
 

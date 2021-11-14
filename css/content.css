@@ -125,6 +125,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 30px,
 }
 
 .activites img {
@@ -134,8 +135,7 @@ aside {
 
 .grande_photo img,
 .grand_cadre img,
-.moyen_cadre img,
-.petit_cadre img {
+.moyen_cadre img {
     width: 270px;
 }
 
@@ -157,8 +157,7 @@ aside {
 
 .grande_photo,
 .grand_cadre,
-.moyen_cadre,
-.petit_cadre {
+.moyen_cadre {
     border: 1px solid #f2f2f2;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #d1d1d1;
