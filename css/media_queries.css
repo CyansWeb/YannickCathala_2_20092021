@@ -105,11 +105,6 @@
         width: 97%;
         margin: auto;
     }
-    .pomegues_frioul,
-    .garde_longchamp {
-        flex-direction: column;
-        width: auto;
-    }
     .activites img {
         width: 100%;
         /* images occupent 100% de la largeur d'activités */
